@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static DifficultyController;
 
 public class MainMenu : MonoBehaviour
 {
-    public string firstLevel;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -19,24 +18,9 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    public void StartGame()
-    {
-        SceneManagemer.LoadScene(firstLevel);
-    }
-
-    public void OpenOptions()
-    {
-        
-    }
-
-    public void CloseOptions()
-    {
-
-    }
-
     public void QuitGame()
     {
         Application.Quit();
-        debug.log("Quitting game");
+        Debug.Log("Quitting game");
     }
 }
