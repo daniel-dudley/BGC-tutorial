@@ -53,4 +53,14 @@ public class PlayerMovement : MonoBehaviour
         m_Rigidbody.MovePosition (m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
         m_Rigidbody.MoveRotation (m_Rotation);
     }
+
+    /*
+    void update ()
+    {
+        if (Input.GetKeyDown (KeyCode.Space))
+        {
+            Vector3 desiredForward = Vector3.RotateTowards (2 * transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
+        }
+    }
+    */
 }
